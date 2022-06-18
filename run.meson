@@ -1,0 +1,10 @@
+#!/bin/sh
+
+echo "Running Meson"
+echo $WLD
+CMAKE_PREFIX_PATH=$WLD
+rm -rf ./build/
+meson build/ --prefix=$WLD 
+#meson build/ --prefix=$WLD --cmake-prefix-path=$WLD/usr --libdir=$WLD/lib
+#meson build/ --prefix=$WLD --cmake-prefix-path=$WLD/usr --build.cmake-prefix-path=$WLD/usr --libdir=$WLD/lib --pkg-config-path=$PKG_CONFIG_PATH --build.pkg-config-path=$PKG_CONFIG_PATH
+ninja -C build/ install

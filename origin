@@ -1,0 +1,6 @@
+git remote -v
+origin	https://github.com/anupamkaul/wayland-protocols.git (fetch)
+origin	https://github.com/anupamkaul/wayland-protocols.git (push)
+upstream	https://github.com/wayland-project/wayland-protocols.git (fetch)
+upstream	https://github.com/wayland-project/wayland-protocols.git (push)
+
